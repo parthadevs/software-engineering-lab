@@ -61,15 +61,14 @@ class Wallet {
 }
 ```
 
-## Key Aspects
+## Modifiers
 
-| Modifier | Accessible from | Notes |
-|---|---|---|
-| `public` | Anywhere | Default in TypeScript |
-| `protected` | The class and its subclasses | Not accessible from outside |
-| `private` | The class only | Compile-time check only |
-| `#field` | The class only | Enforced at runtime by JavaScript |
-
+| Modifier    | Accessible from              | Enforced at |
+|-------------|------------------------------|-------------|
+| `public`    | Anywhere                     | n/a         |
+| `protected` | The class and its subclasses | Compile time |
+| `private`   | The class only               | Compile time |
+| `#field`    | The class only               | Runtime     |
 ## Benefits
 
 - **Invariants are protected:** the balance can never go negative.
